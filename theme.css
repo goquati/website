@@ -4,6 +4,10 @@
     --brand: #ffd60a;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Architects Daughter";
     src: url("css/font/ArchitectsDaughter-Regular.ttf");
