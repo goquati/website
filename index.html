@@ -40,8 +40,7 @@
             <span class="circle-sketch-highlight">Prozessen</span>
         </h1>
         <h3 style="margin-top: 3rem">
-            Standardsoftware und Individualentwicklung,<br>
-            von Schnittstellen über fine-tuned KI-Modelle.<br>
+            Von Schnittstellen und Integration in Bestandssysteme,<br>bis hin zu AI-Anwendungen.<br>
             Lizenzfrei, Open-Source, Self-Hosted und Managed.
         </h3>
         <div style="display: flex; gap: 1rem">
@@ -56,9 +55,7 @@
                 <span class="circle-sketch3-highlight">Projekte</span> die<br>
                 <span class="circle-sketch2-highlight">begeistert</span> haben
             </h2>
-            <h3 style="margin-bottom: 5rem; margin-top: 3rem">
-                Arbeit, die uns beschäftigt und motiviert.<br>
-                Work in Progress
+            <h3 style="margin-bottom: 5rem; margin-top: 1rem">
             </h3>
         </div>
         <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 3rem; padding: 2rem">
@@ -112,8 +109,9 @@
         <a href="./datenschutz">Datenschutz</a>
     </section>
 
-    <section style="border-radius: 2rem; position: sticky; bottom: 1rem; height: 4rem; background-color: var(--brand)">
+    <section id="banner" style="border-radius: 2rem; position: sticky; bottom: 1rem; height: 4rem; background-color: var(--brand)">
         <h3 style="padding: 1rem">Diese Webseite befindet sich aktuell im Aufbau</h3>
+        <h3 onclick="hideBanner()"  style="position: absolute; top: 15px; right: 25px; cursor: pointer">X</h3>
     </section>
 </main>
 
@@ -122,7 +120,14 @@
 <div class="grid"></div>
 
 </body>
-
+<script>
+    function hideBanner() {
+        let banner = document.getElementById("banner");
+        if (!banner)
+            return
+        banner.style.display = "none"
+    }
+</script>
 <style>
     * {
         font-family: Noto Sans, sans-serif;
