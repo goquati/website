@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Matter.js DOM Drag & Throw</title>
+    <!-- Load Matter.js from CDN -->
+    <script src="./matter.min.js"></script>
+    <style>
+        /* Container for our physics bodies */
+        #canvas-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            border: 0 solid #ccc;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        /* The physics-enabled div */
+        #physics-body {
+            position: absolute; /* important to allow us to position it via JS */
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            cursor: grab;       /* just a visual cue for the user */
+        }
+        /* Change cursor during drag */
+        #physics-body:active {
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+
+<div id="canvas-container">
+    <!-- This div will be moved by physics! -->
+    <div id="physics-body"></div>
+</div>
+
+<script>
+    // Matter.js modules
+    const Engine = Matter.Engine,
+        Render = Matter.Render,
+        Runner = Matter.Runner,
+        Bodies = Matter.Bodies,
+        Composite = Matter.Composite,
+        MouseConstraint = Matter.MouseConstraint,
+        Mouse = Matter.Mouse,
+        Events = Matter.Events,
+        World = Matter.World;
+
+    // Create an engine
+    const engine = Engine.create();
+    const world = engine.world;
+
+    // Create a runner and run the engine
+    const runner = Runner.create();
+    Runner.run(runner, engine);
+
+    /*
+      In this demo, we'll do a "manual DOM rendering" approach.
+      That means we won't use Matter.Render; we'll just sync up
+      the position of our DOM element with its body in afterUpdate.
+    */
+
+    // Create a body that matches the size of our DOM element
+    // Our div is 100px by 100px.
+    const boxWidth = 100;
+    const boxHeight = 100;
+    const box = Bodies.rectangle(
+        200, // initial x
+        200, // initial y
+        boxWidth,
+        boxHeight,
+        {
+            restitution: 0.8, // makes it bouncy
+            friction: 0.3
+        }
+    );
+
+    // Add the box to the world
+    Composite.add(world, box);
+
+    // Create "walls" or a floor so the box doesn't drop off the screen
+    // Bottom floor
+    const floor = Bodies.rectangle(400, 600, 800, 50, { isStatic: true });
+    // Top
+    const ceiling = Bodies.rectangle(400, 0, 800, 50, { isStatic: true });
+    // Left wall
+    const leftWall = Bodies.rectangle(0, 300, 50, 600, { isStatic: true });
+    // Right wall
+    const rightWall = Bodies.rectangle(800, 300, 50, 600, { isStatic: true });
+    World.add(world, [floor, ceiling, leftWall, rightWall]);
+
+    // Grab the container and the #physics-body div
+    const container = document.getElementById('canvas-container');
+    const domDiv = document.getElementById('physics-body');
+
+    // Create a Mouse and MouseConstraint so we can drag bodies
+    const mouse = Mouse.create(container);
+    const mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        // Optionally hide the mouse drag lines
+        constraint: {
+            render: { visible: true }
+        }
+    });
+    World.add(world, mouseConstraint);
+
+    // Sync DOM element position in afterUpdate
+    Events.on(engine, 'afterUpdate', () => {
+        // Matter.Body positions are the center of mass
+        domDiv.style.left = (box.position.x - boxWidth / 2) + 'px';
+        domDiv.style.top = (box.position.y - boxHeight / 2) + 'px';
+    });
+
+    // That’s it! Now you can drag the box (the red div) around
+    // inside the container and fling it.
+</script>
+
+</body>
+</html>
