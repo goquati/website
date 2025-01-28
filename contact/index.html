@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Quati</title>
+    <link rel="stylesheet" href="../theme.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/quati.png">
+</head>
+<body>
+
+<div class="root-container">
+    <a href="/" class="logo-container"><img src="../assets/quati.png" alt="Quait Logo"></a>
+    <div class="navbar-container">
+    </div>
+    <div class="sidebar-container">
+        <div><a href="/" style="cursor: pointer">QUATI</a></div>
+    </div>
+    <main class="main-container">
+        <section class="quati-intro-section">
+            <div style="grid-area: center;">
+                <div style="margin-bottom: 1rem" class="small-text-expanded hl">
+                    01
+                    <div class="dash"></div>
+                    Wir freuen uns auf Ihre Anfrage
+                </div>
+                <a href="mailto:hallo@quati.de"><h1>hallo@quati.de</h1></a>
+                <br>
+                <h3>+49 1573 4857266</h3>
+                <br>
+                <h3>Augsburger Str. 11</h3>
+                <h3>86551 Aichach</h3>
+            </div>
+        </section>
+
+        <section class="legal-section">
+            <a href="../impressum" class="body-l">Impressum</a>
+            <a href="../datenschutz" class="body-l">Datenschutz</a>
+            <a href="../licence" class="body-l">Lizenzen</a>
+        </section>
+    </main>
+</div>
+</body>
+<style>
+    a {
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h3 {
+        font-family: Poppins, sans-serif !important;;
+        font-size: 20px;
+    }
+
+    .quati-intro-section {
+        min-height: 80vh;
+        display: grid;
+        grid-template-areas:
+            "top top image-ref"
+            "left center right"
+            "footer footer letter-ref";
+        grid-template-columns: 100px auto 100px;
+        grid-template-rows: 150px auto 150px;
+    }
+</style>
+</html>

@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const floor = Bodies.rectangle((pos.width / 2), pos.height, pos.width, 20, {isStatic: true});
     const rightWall = Bodies.rectangle(pos.width, (pos.height / 2), 10, pos.height, {isStatic: true});
     const textBox = Bodies.rectangle(((wall.width / 2) + (wall.x / 2)), (wall.height / 2) + (wall.y - 80), wall.width, wall.height + 80, {isStatic: true});
-    World.add(world, [floor, ceiling, leftWall, rightWall, textBox]);
+    World.add(world, [floor, ceiling, leftWall, textBox]);
 
     const mouse = Mouse.create(container);
     const mouseConstraint = MouseConstraint.create(engine, {
