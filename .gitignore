@@ -1,1 +1,76 @@
-/.idea/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependencies
+/node_modules/
+/.pnp
+.pnp.js
+
+# Nuxt build files
+/.nuxt/
+/.dist/
+/.nuxt-telemetry.json
+.nuxt/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Local IDE settings
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code settings (optional)
+/.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Linting and Formatting
+.eslintcache
+.stylelintcache
+
+# Yarn & Pnpm
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+.pnpm-store/
+
+# NPM package-lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+
+# Jest
+/coverage/
+/jest-cache/
+/jest-coverage/s
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Storybook
+/.storybook-out/

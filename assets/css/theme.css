@@ -1,0 +1,20 @@
+:root {
+    --brand: #B0EED8;
+    --surface: #FFF;
+    --on-surface: #2E2E2E;
+    --on-brand: #FFF;
+    --border-color: #0003;
+
+    --display-l: 36px;
+    --display-m: 33px;
+    --display-s: 28px;
+
+    --headline-m: 21px;
+
+    --hero-paragraph: 16px;
+    --small-text-expanded: 14px;
+
+    --lable-l: 16px;
+
+    --body-l: 14px;
+}
