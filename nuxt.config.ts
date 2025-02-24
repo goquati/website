@@ -6,10 +6,7 @@ export default defineNuxtConfig({
     ],
     compatibilityDate: '2024-11-01',
     devtools: {enabled: false},
-    modules: [
-        '@nuxtjs/tailwindcss',
-        '@nuxt/image',
-    ],
+    modules: ['@nuxtjs/tailwindcss', '@nuxt/image', "nuxt-calendly"],
     tailwindcss: {
         exposeConfig: true,
         viewer: true,
@@ -23,6 +20,13 @@ export default defineNuxtConfig({
                     defer: true,
                     tagPosition: "head",
                     'data-app-id': "6EEB15B7-D274-4D92-8C93-683BBC883F50"
+                }
+            ],
+            link: [
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    href: "/quati.svg"
                 }
             ]
         }

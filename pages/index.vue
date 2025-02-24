@@ -12,31 +12,31 @@ const data = {
       route: '/helpdesk',
       image: "/images/helpdesk-icon.svg",
       title: 'Helpdesk',
-      description: 'Ein Open-Source ERP-System für optimiert Geschäftsprozesse, Kontrolle und Transparenz.'
+      description: 'Frappe Helpdesk ist ein Open-Source-Ticketing-Tool, welches dir hilft, Deine Support-Workflows zu optimieren'
     },
     {
       route: '/bi',
       image: "/images/bi-icon.svg",
       title: 'BI-System',
-      description: 'Ein Open-Source ERP-System für optimiert Geschäftsprozesse, Kontrolle und Transparenz.'
+      description: 'Frappe Insights ist ein 100 % Open-Source-BI-Tool, welches unterschiedliche Datenquellen bündelt und visualisiert.'
     },
     {
       route: '/crm',
       image: "/images/crm-icon.svg",
       title: 'CRM-System',
-      description: 'Ein Open-Source ERP-System für optimiert Geschäftsprozesse, Kontrolle und Transparenz.'
+      description: 'Mit Frappe CRM erhältst du ein modernes, intuitives und flexibles Open-Source-CRM – für volle Kontrolle über deine Kundenbeziehungen.'
     },
     {
       route: '/lms',
       image: "/images/lms-icon.svg",
       title: 'LMS-System',
-      description: 'Ein Open-Source ERP-System für optimiert Geschäftsprozesse, Kontrolle und Transparenz.'
+      description: 'Frappe Learning - ein modernes, flexibles, intuitives und einfach zu bedienendes Open Source Learn-Management-System.'
     },
     {
       route: '/erp',
       image: "/images/erp-icon.svg",
       title: 'ERP-System',
-      description: 'Ein Open-Source ERP-System für optimiert Geschäftsprozesse, Kontrolle und Transparenz.'
+      description: 'ERPNext ist ein 100 % Open-Source-ERP – modern, umfassend und benutzerfreundlich.'
     },
   ]
 }

@@ -19,7 +19,7 @@ const toggleControls = () => {
       :body="'Frappe Insights ist ein 100 % Open-Source-BI-Tool, das Datenanalyse und Reporting sowohl für technische als auch nicht-technische Nutzer einfacher und zugänglicher macht.'"/>
 
   <div class="flex flex-row flex-wrap">
-    <a href="https://github.com/frappe/lms" class="mr-4">
+    <a href="/trial" class="mr-4">
       <Btn text="14 Tage kostenlos Testen"/>
     </a>
     <a href="https://github.com/frappe/insights">

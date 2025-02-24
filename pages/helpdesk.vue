@@ -19,7 +19,7 @@ const toggleControls = () => {
       :body="'Frappe Helpdesk ist ein Open-Source-Ticketing-Tool, das dir hilft, Deine Support-Workflows zu optimieren, Probleme effizient zu bearbeiten und Kunden zu begeistern'"/>
 
   <div class="flex flex-row flex-wrap">
-    <a href="https://github.com/frappe/helpdesk" class="mr-4">
+    <a href="/trial" class="mr-4">
       <Btn text="14 Tage kostenlos Testen"/>
     </a>
     <a href="https://github.com/frappe/helpdesk">

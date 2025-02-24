@@ -19,7 +19,7 @@ const toggleControls = () => {
       :body="'Mit Frappe CRM erhältst du ein modernes, intuitives und flexibles Open-Source-CRM – für volle Kontrolle über deine Kundenbeziehungen.'"/>
 
   <div class="flex flex-row flex-wrap">
-    <a href="https://github.com/frappe/lms" class="mr-4">
+    <a href="/trial" class="mr-4">
       <Btn text="14 Tage kostenlos Testen"/>
     </a>
     <a href="https://github.com/frappe/crm">

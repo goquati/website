@@ -19,7 +19,7 @@ const toggleControls = () => {
       :body="'Mit Frappe Learning liefern ein modernes, einfach zu bedienendes Lernmanagement-System – flexibel, intuitiv und Open Source, damit du stets die Kontrolle behalten kannst.'"/>
 
   <div class="flex flex-row flex-wrap">
-    <a href="https://github.com/frappe/lms" class="mr-4">
+    <a href="/trial" class="mr-4">
       <Btn text="14 Tage kostenlos Testen"/>
     </a>
     <a href="https://github.com/frappe/lms">

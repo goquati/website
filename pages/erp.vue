@@ -19,7 +19,7 @@ const toggleControls = () => {
       :body="'ERPNext ist ein 100 % Open-Source-ERP – modern, umfassend und benutzerfreundlich.'"/>
 
   <div class="flex flex-row flex-wrap">
-    <a href="https://github.com/frappe/erpnext" class="mr-4">
+    <a href="/trial" class="mr-4">
       <Btn text="14 Tage kostenlos Testen"/>
     </a>
     <a href="https://github.com/frappe/erpnext">

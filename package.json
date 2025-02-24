@@ -13,6 +13,7 @@
     "@nuxt/image": "^1.9.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "nuxt": "^3.15.4",
+    "nuxt-calendly": "^0.1.21",
     "vue": "latest",
     "vue-router": "latest"
   }
