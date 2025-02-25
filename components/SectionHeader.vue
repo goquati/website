@@ -14,7 +14,7 @@ defineProps<{
       <div class="dash"></div>
       {{ chapterText }}
     </div>
-    <h1 class="text-4xl mt-4 mb-8">{{ title }}</h1>
+    <h1 class="sm:text-4xl text-3xl mt-4 mb-8">{{ title }}</h1>
     <p class="text-base">
       {{ body }}
     </p>

@@ -50,7 +50,7 @@ const data = {
         :chapter-text="'Wir sind Quati'"
         :title="'Unternehmenssoftware ohne Vendor Lock-In'"
         :body="'Individualisierbar, Modular und Open-Source. Wir kümmern uns um Hosting, Betrieb und Individualisierung – damit dem Kerngeschäft nichts im Weg steht.'"/>
-    <video class="xl:w-1/2 lg:w-2/3 md:w-3/4 w-full cursor-pointer mt-16" :controls="showControls"
+    <video class="xl:w-1/2 lg:w-2/3 md:w-3/4 w-full cursor-pointer mt-16 rounded-2xl" :controls="showControls"
            src="/videos/intro-reel.mp4"
            poster="/videos/intro-reel.png" @click="toggleControls"/>
     <Cta title="Kontakt aufnehmen" class="mt-16"/>
@@ -74,8 +74,6 @@ const data = {
       </a>
     </div>
   </section>
-
-
 </template>
 
 <style scoped>
