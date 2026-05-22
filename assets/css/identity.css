@@ -198,7 +198,6 @@ p, .p, .body, .lead { color: var(--ink-2); line-height: 1.65; }
 .hero-personal .dev .photo,
 .hero-personal .dev-1 .photo,
 .hero-personal .dev-2 .photo {
-  background: var(--clay-soft);
   border-radius: 8px;
 }
 .hero-personal .dev .photo img { filter: none; }
