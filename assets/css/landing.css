@@ -348,6 +348,13 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 18px;
+  overflow: hidden;
+}
+.testi-card .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .testi-card .who-row .who {
   font-size: 14px;
