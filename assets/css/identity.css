@@ -1,0 +1,243 @@
+/* ============================================================
+   Identity override — applied LAST.
+   Mint #84DEB2 accent, Ink #1A1A18, Cream #FAEEDA, Off-white #F1EFE8
+   Fraunces 700 headlines, Inter body/UI
+   ============================================================ */
+
+:root {
+  --bone:        #F1EFE8;
+  --bone-2:      #FAEEDA;
+  --sand:        #FAEEDA;
+  --stone-light: #E5E2DA;
+  --stone:       #CFCCC2;
+
+  --ink:    #1A1A18;
+  --ink-2:  #4A4A46;
+  --ink-3:  #888780;
+
+  --clay:        #84DEB2;
+  --clay-deep:   #4FB789;
+  --clay-soft:   #B5EBCF;
+  --clay-tint:   #E8F8EF;
+
+  --moss:        #2F8F66;
+  --moss-soft:   #6FB596;
+
+  --positive:    #4FB789;
+  --warning:     #C28A20;
+  --danger:      #C0392B;
+
+  --font-serif: 'Fraunces', 'Times New Roman', ui-serif, Georgia, serif;
+  --font-sans:  'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r:    6px;
+  --r-md: 10px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+
+  --shadow-xs:    none;
+  --shadow-sm:    none;
+  --shadow:       none;
+  --shadow-lg:    none;
+  --shadow-xl:    none;
+  --shadow-inset: none;
+}
+
+html, body {
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Headlines: Fraunces 700 */
+.display, h1, .h1, h2, .h2 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+h3, .h3, h4, .h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.display em, .h1 em, .h2 em, h1 em, h2 em { font-style: italic; color: inherit; }
+.display .accent { color: var(--clay); font-style: italic; }
+
+p, .p, .body, .lead { color: var(--ink-2); line-height: 1.65; }
+
+/* Kill uppercase everywhere it shouldn't be */
+.eyebrow,
+.service-card-lg .num,
+.story-meta, .story-tag,
+.testi-card .who-row .role,
+.hero-pf .ribbon,
+.cta-panel .reassure,
+.cta-panel .eyebrow,
+.footer .h, .footer-bottom,
+.badge,
+.nav-name {
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-sans);
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-3);
+}
+
+/* Nav */
+.nav {
+  background: var(--bone);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: 1px solid var(--stone-light);
+}
+.nav-name { font-family: var(--font-serif); font-style: normal; font-weight: 700; font-size: 20px; }
+.nav-name em { font-style: normal; }
+.nav-name b { color: var(--clay); font-weight: 700; }
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+  box-shadow: none;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+.btn:hover { transform: none; }
+.btn-primary {
+  background: var(--ink);
+  color: var(--bone-2);
+  border: 1px solid var(--ink);
+}
+.btn-primary:hover { background: #2A2A26; color: var(--bone-2); }
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+}
+.btn-secondary:hover { background: var(--ink); color: var(--bone-2); }
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--stone);
+}
+.btn-ghost:hover { background: var(--bone-2); border-color: var(--ink); }
+
+/* Cards */
+.service-card-lg,
+.story-card,
+.testi-card { border-radius: 12px; box-shadow: none; }
+.service-card-lg:hover,
+.story-card:hover,
+.testi-card:hover {
+  border-color: var(--ink);
+  box-shadow: none;
+  transform: none;
+}
+
+/* Service card icon wrap → black */
+.service-card-lg .icon-wrap {
+  background: var(--ink);
+  color: var(--bone-2);
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+}
+
+/* Why-card icon wrap → dark with mint icon */
+.why-card .icon-wrap {
+  background: var(--ink);
+  color: var(--clay);
+  border-radius: 10px;
+}
+
+/* Mint as accent */
+.eyebrow .clay,
+.hero-eyebrow .clay { color: var(--clay); }
+
+/* Service-card check icon → moss */
+.service-card-lg .bullets li .check { color: var(--moss); }
+
+/* Dark blocks */
+.footer,
+.cta-panel { background: var(--ink); color: var(--bone-2); }
+
+.cta-panel h2 em { color: var(--clay); }
+.cta-panel .btn-primary { background: var(--bone-2); color: var(--ink); border-color: var(--bone-2); }
+.cta-panel .btn-primary:hover { background: #FFFFFF; color: var(--ink); }
+.cta-panel .btn-ghost { color: var(--bone-2); border-color: rgba(250, 238, 218, 0.35); }
+.cta-panel .btn-ghost:hover { background: rgba(250, 238, 218, 0.08); border-color: var(--bone-2); }
+.cta-panel { border-radius: 12px; }
+
+.testi-card .quote em { color: var(--ink); font-style: italic; font-weight: 600; }
+.testi-card .avatar {
+  background: var(--ink);
+  color: var(--bone-2);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-style: normal;
+}
+.testi-card .quote-mark { color: var(--clay); }
+
+/* Story cover colors */
+.placeholder.clay { background: var(--ink); color: var(--bone-2); }
+.placeholder.moss { background: var(--bone-2); color: var(--ink); }
+.placeholder.sand { background: var(--bone-2); color: var(--ink); }
+.placeholder.ink  { background: var(--ink); color: var(--bone-2); }
+.story-cover-dot { color: var(--clay); opacity: 1; }
+
+/* Hero polaroid cards */
+.hero-personal .dev,
+.hero-personal .dev-1,
+.hero-personal .dev-2 { box-shadow: none; border-radius: 12px; background: var(--bone-2); }
+.hero-personal .dev .photo,
+.hero-personal .dev-1 .photo,
+.hero-personal .dev-2 .photo {
+  background: var(--clay-soft);
+  border-radius: 8px;
+}
+.hero-personal .dev .photo img { filter: none; }
+.hero-personal .dev .bubble {
+  background: var(--ink);
+  color: var(--bone-2);
+  font-family: var(--font-serif);
+  font-style: italic;
+  border-radius: 10px;
+  box-shadow: none;
+}
+.hero-personal .dev-2 .bubble { background: var(--ink); }
+.hero-personal .dev .bubble em { color: var(--clay); }
+
+/* Floaters less loud */
+.hero-pf .floater { opacity: 0.14; color: var(--clay); }
+
+/* FAQ */
+.faq-summary { font-family: var(--font-serif); font-weight: 700; letter-spacing: -0.01em; }
+.faq-summary:hover { color: var(--clay); }
+details[open] .faq-summary .toggle { background: var(--ink); color: var(--bone-2); border-color: var(--ink); }
+
+/* Footer */
+.footer .h { color: rgba(250, 238, 218, 0.55); font-family: var(--font-sans); font-weight: 500; }
+.footer-link { color: rgba(250, 238, 218, 0.85); }
+.footer-link:hover { color: var(--clay); }
+.footer-bottom { color: rgba(250, 238, 218, 0.45); font-family: var(--font-sans); border-color: rgba(250, 238, 218, 0.15); }
+.footer-tagline { font-family: var(--font-serif); font-weight: 700; font-style: italic; color: var(--bone-2); }
+.footer-tagline .accent { color: var(--clay); }
+
+/* Badges */
+.badge { font-family: var(--font-sans); font-weight: 500; font-size: 12px; }
+
+/* Links */
+a { text-decoration-color: var(--clay); }
+a:hover { color: var(--clay); }
+
+::selection { background: var(--clay-soft); color: var(--ink); }
+
+/* Nav links */
+.nav-link::after { background: var(--clay); }
+.nav-link:hover, .nav-link.active { color: var(--ink); }
