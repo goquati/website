@@ -4,7 +4,7 @@
       <div class="lhs">
         <div class="eyebrow"><span class="clay">03 </span>Erfolgsgeschichten</div>
         <h2 class="h1" style="margin-top:14px;">
-          Was wir zuletzt <em>geliefert</em> haben.
+          Drei Projekte. Drei Branchen. Live <em>geliefert</em>.
         </h2>
       </div>
       <div class="rhs">
@@ -51,7 +51,7 @@ const stories = [
     client: 'Open Hippo',
     year: '2025',
     tags: ['On-Prem-KI', 'Web-Chat', 'Beliebiges Modell'],
-    desc: 'Ein privater Firmenchat mit internem Unternehmenswissen — läuft komplett <em>auf der eigenen Hardware</em> des Unternehmens. Bring dein eigenes Modell mit.',
+    desc: 'Das Unternehmen wollte ChatGPT-Fähigkeiten — aber ihre Dokumente sollten die Cloud nie verlassen. Wir bauten einen privaten Firmenchat, der vollständig <em>auf ihrer eigenen Hardware</em> läuft. Beliebige Modelle, volle Datenkontrolle.',
   },
   {
     name: 'Marvin',
@@ -60,7 +60,7 @@ const stories = [
     client: 'Open Hippo',
     year: '2026',
     tags: ['Sprachagent', 'Mehrsprachig', 'Bürgerdienste'],
-    desc: 'Ein Sprachagent für ein Bürgeramt. Nimmt Anrufe entgegen, übernimmt den <em>1st-Level-Support</em> und bucht Bürger:innen in den richtigen Zeitslot — in ihrer Sprache.',
+    desc: 'Ein Bürgeramt bekommt täglich hunderte Anrufe für dieselben fünf Fragen. Marvin nimmt sie entgegen, beantwortet den <em>Standard-Support</em> und bucht Bürger:innen direkt in den richtigen Termin — in ihrer Sprache, rund um die Uhr.',
   },
   {
     name: 'HacksTracks',

@@ -54,5 +54,13 @@ const items = [
     q: 'Was, wenn etwas <em>schiefgeht</em>?',
     a: '<p>Wir haben noch nie einen Festpreis-Umfang gesprengt, aber harte Wochen hatten wir definitiv. Unsere Regel: Probleme innerhalb von 48 Stunden ansprechen — mit einem schriftlichen Plan zur Behebung. Kein stilles Verschleppen.</p><p>Wenn wir einen Meilenstein verpassen, geht der nächste Sprint auf uns, bis er steht.</p>',
   },
+  {
+    q: 'Können <em>zwei Personen</em> mit unserem Projekt umgehen?',
+    a: '<p>Kommt auf den Scope an — und das sagen wir euch ehrlich nach dem ersten Austausch. Ein klar eingegrenztes Produkt: ja, problemlos. Wenn ihr ein Team von 15 Entwicklern für laufende Weiterentwicklung sucht, sind wir die Falschen.</p><p>Wir haben bisher noch keinen Scope übernommen, den wir nicht geliefert haben. Wenn euer Projekt außerhalb davon liegt, sagen wir es vor Vertragsunterschrift — nicht nach der ersten Rechnung.</p>',
+  },
+  {
+    q: 'Was braucht ihr von uns, um <em>loszulegen</em>?',
+    a: '<p>Zwei Absätze: Was ihr bauen wollt und warum gerade jetzt. Den Rest klären wir im ersten Austausch. Ihr müsst kein vollständiges Spec-Dokument schreiben — das wäre Discovery-Theater, und das machen wir nicht.</p>',
+  },
 ]
 </script>

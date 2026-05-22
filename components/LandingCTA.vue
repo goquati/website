@@ -11,15 +11,15 @@
       <div class="actions">
         <a href="mailto:hello@quati.dev?subject=Projektanfrage" style="text-decoration:none;">
           <button class="btn btn-primary">
-            Projekt starten
+            Projekt anfragen
             <QuatiIcon name="arrow-right" :size="16" />
           </button>
         </a>
-        <a href="mailto:hello@quati.dev" style="text-decoration:none;">
-          <button class="btn btn-ghost">oder schreibt uns eine Mail</button>
+        <a href="mailto:hello@quati.dev?subject=Frage" style="text-decoration:none;">
+          <button class="btn btn-ghost">Frage stellen</button>
         </a>
       </div>
-      <div class="reassure">Unverbindlich · Einfach ein Gespräch</div>
+      <div class="reassure">Kein Vertrag, keine Verpflichtung — nur ein ehrliches Ja oder Nein.</div>
     </div>
   </section>
 </template>

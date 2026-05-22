@@ -33,12 +33,12 @@ const blocks = [
   {
     icon: 'rocket',
     title: 'Sechs-Wochen-<em>Tempo</em>',
-    desc: 'Wir liefern in Wochen, wofür die meisten Agenturen Quartale brauchen. Nicht durch Abkürzungen — sondern durch das Entfernen von Schichten.',
+    desc: 'Wir liefern in sechs Wochen, wofür Agenturen Quartale kalkulieren. Kein Sprint-Poker, keine Ticket-Hygiene-Meetings. Einfach Code, der läuft.',
   },
   {
     icon: 'wrench',
     title: 'Nur <em>Senior</em>',
-    desc: 'Zwei Entwickler mit jeweils 10+ Jahren Erfahrung. Keine Juniors, kein Babysitten, niemand lernt das Framework auf eure Kosten.',
+    desc: 'Zwei Entwickler, zusammen über 20 Jahre Erfahrung. Jede technische Entscheidung trifft jemand, der das Problem schon zwanzigmal gelöst hat. Niemand lernt das Framework auf eure Kosten.',
   },
   {
     icon: 'mail',
@@ -49,6 +49,11 @@ const blocks = [
     icon: 'compass',
     title: 'Pragmatisch <em>von Haus aus</em>',
     desc: 'Wir wählen bewusst den langweiligen, bewährten Stack. Das Spannende ist euer Produkt — nicht unsere Infrastruktur.',
+  },
+  {
+    icon: 'spark',
+    title: 'Zwei Leute — und das <em>reicht</em>.',
+    desc: 'Wir arbeiten nicht mit Subunternehmern und lagern nichts aus. Was ein Team von zehn an Kommunikation verbraucht, stecken wir in Code. Für Projekte in unserem Scope ist klein ein Vorteil, kein Risiko.',
   },
 ]
 </script>

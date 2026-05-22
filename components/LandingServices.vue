@@ -4,7 +4,7 @@
       <div class="lhs">
         <div class="eyebrow"><span class="clay">02 </span>Leistungen</div>
         <h2 class="h1" style="margin-top:14px;">
-          Drei Wege, wie wir mit euch <em>bauen</em>.
+          Von der Idee zum Produkt. In Wochen, nicht <em>Monaten</em>.
         </h2>
       </div>
       <div class="rhs">
@@ -39,10 +39,10 @@ const services = [
     num: '01',
     icon: 'spark',
     title: 'KI-<em>Automatisierungen</em>',
-    desc: 'Wir bringen LLMs in die langweiligen Teile eures Geschäfts — Tickets, Postfächer, Tabellen. Echte Workflows, keine Demos.',
+    desc: 'Wir automatisieren die Arbeit, die eure besten Leute täglich ausbremst — E-Mails, Tickets, manuelle Prozesse. Das läuft dann im Hintergrund. Keine Demo-Spielzeuge, keine Pilotprojekte, die nie in Produktion gehen.',
     bullets: [
-      'Agentische Workflows & Integrationen',
-      'RAG über eure internen Dokumente',
+      'KI-Workflows, die in eure bestehenden Tools greifen',
+      'KI, die eure Dokumente und internen Daten kennt',
       'Modelle, die ihr euch leisten könnt',
     ],
   },
@@ -50,11 +50,11 @@ const services = [
     num: '02',
     icon: 'wrench',
     title: 'Fullstack-<em>Anwendungen</em>',
-    desc: 'Web-Apps, Dashboards, APIs. Interne Tools, kundenorientierte Produkte, das ganze Paket — von vorn bis hinten, von den Menschen, die es schreiben.',
+    desc: 'Web-Apps, Dashboards, APIs — intern oder für eure Kunden. Wir bauen von vorne bis hinten. Kein Übergabechaos zwischen Frontend und Backend, weil beides dieselben Leute schreiben.',
     bullets: [
       'TypeScript, React, Postgres',
       'Auth, Payments, der ganze Kleinkram',
-      'Gebaut, um zu skalieren — nicht um es wegzuwerfen',
+      'Code, den ihr nach uns weiterentwickeln könnt',
     ],
   },
   {

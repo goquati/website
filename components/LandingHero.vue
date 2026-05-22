@@ -27,16 +27,16 @@
         </h1>
 
         <p class="lead-pf">
-          Kein Sales-Floor, kein Discovery-Theater. Nur wir zwei —
-          mit jeweils über 10 Jahren Erfahrung — die euer Produkt
-          <span class="hl"> selbst bauen und ausliefern</span>.
-          MVPs, Custom-Builds, KI-Automatisierungen.
+          Zwei Entwickler. Zusammen 20 Jahre Erfahrung. Euer Produkt live — in sechs Wochen.
+          Kein Account-Manager in der Mitte. Kein Junior, der das Framework auf eure Kosten lernt.
+          Nur die Menschen, die den Code schreiben —
+          <span class="hl">direkt in eurem Slack</span>.
         </p>
 
         <div class="actions-pf">
           <a href="#contact" style="text-decoration:none;position:relative;">
             <button class="btn btn-primary">
-              Sagt Hallo
+              Projekt anfragen
               <QuatiIcon name="arrow-right" :size="16" />
             </button>
           </a>
@@ -46,8 +46,8 @@
         </div>
 
         <div class="ribbon">
-          <span><span class="em">∅</span> Account-Manager</span>
-          <span><span class="em">∅</span> Junior-Praktikanten</span>
+          <span>Kein Account-Manager</span>
+          <span>Keine Junioren</span>
           <span><span class="em">✓</span> Direkter Slack zum Code</span>
         </div>
       </div>
