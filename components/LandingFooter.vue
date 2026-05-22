@@ -7,7 +7,7 @@
             Wir liefern <em>echte</em><br />Software<span class="accent">.</span>
           </div>
           <div style="margin-top:32px;font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:rgba(250,238,218,0.6);">
-            Lissabon · Remote-freundlich
+            Augsburg · Remote-freundlich
           </div>
         </div>
         <div>
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Quati Studio</span>
+        <span>© 2026 Quati GmbH</span>
         <span>Mit Sorgfalt gemacht, nicht mit Slides.</span>
       </div>
     </div>
